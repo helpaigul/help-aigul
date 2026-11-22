@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Помощь Айгуль</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 25px 15px;
+  color: #333;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px #ddd;
+}
+button {
+  background: #238636;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.number {
+  font-size: 20px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+</style>
+</head>
+<body>
+
+<h2>❤️ Помощь Айгуль</h2>
+<p>Спасибо за вашу поддержку!</p>
+
+<div class="card">
+<h3>Kaspi Gold</h3>
+<p class="number">8 701 440 61 13</p>
+<button onclick="copy('87014406113')">
+Скопировать номер
+</button>
+</div>
+
+<div class="card">
+<h3>Halyk Bank</h3>
+<p class="number">8 701 440 61 13</p>
+<button onclick="copy('87014406113')">
+Скопировать номер
+</button>
+</div>
+
+<div class="card">
+<h3>Freedom Bank</h3>
+<p class="number">5269 8800 5641 8601</p>
+<button onclick="copy('5269880056418601')">
+Скопировать карту
+</button>
+</div>
+
+<p>Получатель: Айгуль А.</p>
+<p>🙏 Спасибо каждому за помощь!</p>
+
+<script>
+async function copy(value) {
+  try {
+    await navigator.clipboard.writeText(value);
+    alert("Реквизиты скопированы!");
+  } catch (error) {
+    prompt("Скопируйте реквизиты:", value);
+  }
+}
+</script>
+
+</body>
+</html>
